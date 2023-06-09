@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,400;1,700&family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(90deg, #4743d0, #880868);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100vw;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #fff;
+}
+
+h3 {
+    font-weight: 100;
+    color: #fff;
+}
+
+form {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5rem 0;
+}
+
+input,
+button {
+    background-color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    padding: 15px 20px;
+}
+
+input {
+    font-weight: bold;
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:active {
+    background-color: aquamarine;
+}
+
+.poke-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.poke-box {
+    width: 250px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 10px;
+    transition: all ease-out 0.4s;
+}
+
+.poke-box:hover {
+    border: 2px solid green;
+    transition: all ease-out 0.4s;
+    transform: scale(1.1);
+}
+
+.poke-box img {
+    margin: 10px 0;
+    object-fit: cover;
+    width: 80%;
+}
+
+.poke-box h4 {
+    font-size: 1.4rem;
+    margin: 5px auto;
+}
+
+.poke-box p {
+    margin: 10px auto;
+}
+
+.poke-box .poke-name {
+    text-transform: capitalize;
+}
+
+.poke-navigation {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.nav-button {
+    cursor: pointer;
+    height: 40px;
+    width: 200px;
+    border: 1px solid white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav-button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.github-ribbon {
+    position: absolute;
+}
+
+.poke-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 10px;
+    background-color: #201e1e;
+    color: #fff;
+}
+
+.poke-footer span {
+    margin-bottom: 15px;
+}
+    
+.back-to-top-button {
+    cursor: pointer;
+    display: inline-block;
+    background-color: #ff9800;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+.back-to-top-button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+
+.back-to-top-button:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+
+.back-to-top-button:active {
+    background-color: #555;
+}
+
+.back-to-top-button.show {
+    opacity: 1;
+    visibility: visible;
+}
