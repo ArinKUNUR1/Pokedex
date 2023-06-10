@@ -73,5 +73,5 @@ searchInput.addEventListener("input", function (e) {
 });
 
 backtoBtn.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0,  behavior: "smooth" });
 });
