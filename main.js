@@ -1,6 +1,7 @@
 const searchInput = document.querySelector("#poke-input");
 const searchBtn = document.querySelector(".btn-search");
 const pokeContainer = document.querySelector(".poke-container");
+const backtoBtn = document.querySelector(".back-to-top-button")
 
 const colors = {
     fire: "#FDDFDF",
@@ -69,11 +70,8 @@ searchInput.addEventListener("input", function (e) {
             pokeName.parentElement.style.display = "none";
         }
     });
+});
 
-
-
-
-
-
-
-})
+backtoBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+});

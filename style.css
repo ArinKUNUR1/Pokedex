@@ -143,29 +143,14 @@ button:active {
     
 .back-to-top-button {
     cursor: pointer;
-    display: inline-block;
     background-color: #ff9800;
     width: 50px;
     height: 50px;
-    text-align: center;
     border-radius: 4px;
     position: fixed;
     bottom: 30px;
     right: 30px;
-    transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
-    opacity: 0;
-    visibility: hidden;
     z-index: 1000;
-}
-
-.back-to-top-button::after {
-    content: "\f077";
-    font-family: FontAwesome;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 2em;
-    line-height: 50px;
-    color: #fff;
 }
 
 .back-to-top-button:hover {
@@ -175,9 +160,4 @@ button:active {
 
 .back-to-top-button:active {
     background-color: #555;
-}
-
-.back-to-top-button.show {
-    opacity: 1;
-    visibility: visible;
 }
